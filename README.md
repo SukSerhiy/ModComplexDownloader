@@ -8,4 +8,4 @@ Download.dll downloads files and folders from Google Drive using Google Drive Ap
 Class GoogleDriveDataDownloader.cs uses for downloading files, class Saver.cs - for saving them to computer.
 ProgressConfiger.cs is used for tracing the progress of downloading.
 
-RegistryWorker.dll is used for making changes to Windows registry and making reserve copy of registry befire it.
+RegistryWorker.dll is used for making changes to Windows registry and making reserve copy of registry before it.
