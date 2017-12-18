@@ -1,0 +1,75 @@
+﻿<Page x:Class="ModComplexDownloader.ChoosePathPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ModComplexDownloader"
+      mc:Ignorable="d" d:DesignWidth="300"
+      Title="Page1" Height="204.667">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Content="Виберіть необхідні шляхи" FontSize="18" Padding="10, 0, 0, 0"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.RowSpan="2" Padding="10,0,0,0">Шлях до кореневої папки</Label>
+                <TextBox x:Name="pathTextBox" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10,0,0,0" FontSize="14" />
+                <Button x:Name="pathChooseButton" Grid.Row="1" Grid.Column="1" Content="..." Margin="20, 0, 20, 0" Padding="0, 0, 0, 4" MaxWidth="120" Click="pathChooseButton_Click" ></Button>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.RowSpan="2" Padding="10,0,0,0">Шлях до MS WORD</Label>
+                <TextBox x:Name="pathWordTextBox" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10,0,0,0" />
+                <Button x:Name="pathWordChooseButton" Grid.Row="1" Grid.Column="1" Content="..." Margin="20, 0, 20, 0" Padding="0, 0, 0, 4" MaxWidth="120" Click="pathWordChooseButton_Click"></Button>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.RowSpan="2" Padding="10,0,0,0">Шлях до MATLAB</Label>
+                <TextBox x:Name="pathMatlabTextBox" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Margin="10,0,0,0" />
+                <Button x:Name="pathMatlabChooseButton" Grid.Row="1" Grid.Column="1" Content="..." Margin="20, 0, 20, 0" Padding="0, 0, 0, 4" MaxWidth="120" Click="pathMatlabChooseButton_Click"></Button>
+            </Grid>
+            
+        </Grid>
+
+    </Grid>
+
+</Page>
